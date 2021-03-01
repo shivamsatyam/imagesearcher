@@ -1,0 +1,139 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header{
+	    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: black;
+    color: white;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    height: 9vh;
+    align-items: center;
+}
+
+#typed-strings{
+	display: none;
+}
+
+nav{
+    display: flex;
+    border: 2px solid;
+    background-color: black;
+}
+
+nav::before{
+
+}
+
+.nav__first{
+flex-grow: 6;
+}
+
+
+.nav__image{
+    display: flex;
+    color: white;
+    align-items: center;
+}
+
+.nav__image h2{
+	    margin-left: 13px;
+    font-family: sans-serif;
+}
+
+.nav__image img{
+width: 57px;
+    border-radius: 50%;
+}
+
+
+.nav__second{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.nav__second input{
+
+    height: 34px;
+    width: 251px;
+    outline: none;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    letter-spacing: 0.3px;
+    border: none;
+    border-radius: 6px;
+    margin: 1px 10px;
+}
+
+.nav__second button{
+width: 94px;
+    margin-right: 13px;
+    height: 38px;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+    background: transparent;
+    border: 3px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.4s;
+    transition-timing-function: ease-in-out;
+
+}
+
+.nav__second button:hover{
+	background-color: white;
+	color: black;
+}
+
+.image{
+	   
+       height: 86vh;
+    background-image: url(../img/photo-1614451153813-3ae775971cbe.jpg),linear-gradient( 
+45deg
+ , #ef7777, orange);
+    background-size: cover,cover;
+    background-blend-mode: luminosity;
+    box-shadow: 1px 1px 15px 7px orangered;
+    margin: 12px;
+    transform: scale(1.002);
+}
+
+
+.image-shower{
+	    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.image-shower img{
+	width: 100%;
+    margin: 15px 32px;
+}
+
+
+
+#typed::after{
+	content: ' ';
+	display:inline;
+	animation: blink 0.7s infinite;
+}
+
+
+@keyframes blink{
+	0%{opacity: 1;}
+	50%{opacity: 0;}
+	1000%{opacity: 1;}
+}
